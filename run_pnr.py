@@ -95,7 +95,6 @@ def cgra_flow():
             pnr.init_regions(OneHotHandler, CategoryHandler, ScalarHandler, True),
             pnr.distinct,
             pnr.register_colors,
-            pnr.pin_IO,
             pnr.pin_resource,
             pnr.HPWL(rmods, nmods + rmods)
         ]
@@ -103,7 +102,6 @@ def cgra_flow():
             pnr.init_regions(OneHotHandler, CategoryHandler, ScalarHandler, True),
             pnr.distinct,
             pnr.register_colors,
-            pnr.pin_IO,
             pnr.pin_resource,
             pnr.HPWL(rmods, 2*nmods + rmods)
         ]
@@ -111,7 +109,6 @@ def cgra_flow():
             pnr.init_regions(OneHotHandler, CategoryHandler, ScalarHandler, True),
             pnr.distinct,
             pnr.register_colors,
-            pnr.pin_IO,
             pnr.pin_resource,
             pnr.HPWL(rmods, 4*nmods + rmods)
         ]

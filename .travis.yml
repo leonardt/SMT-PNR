@@ -62,8 +62,14 @@ install:
     # install pnrdoctor
     - pip install -e package
 
+    - git clone https://github.com/StanfordAHA/CGRAMapper.git
+    - cd CGRAMapper
+    - sudo make install
+
 script:
     - echo Running tests with $SOLVER
     - ./test/test.sh
+
+    # Run mantle->mapper->pnr tests
     - cd test/test_mantle
     - pytest

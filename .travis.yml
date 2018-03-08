@@ -65,6 +65,10 @@ install:
     - git clone https://github.com/StanfordAHA/CGRAMapper.git
     - cd CGRAMapper
     - sudo make install
+    - cd ..
+    - pip install delegator.py
+    - pip install git+git://github.com/phanrahan/magma.git
+    - pip install git+git://github.com/phanrahan/mantle.git
 
 script:
     - echo Running tests with $SOLVER
